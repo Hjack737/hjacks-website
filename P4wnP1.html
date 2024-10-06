@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/images/Hjack.ico" type="image/x-icon">
+	<title>Hjack</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="./assets/css/main.css" />
+
+<script src="https://kit.fontawesome.com/a9e23288c0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<header>
+		<section id="homebtn">
+		<div class="container">
+			<h2><span>Hjack</span>737</h2>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="#">Blog</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<button class="hamburger">
+				<div class="bar"></div>
+			</button>
+		</div>
+	</section>
+	</header>
+	<nav class="mobile-nav">
+		<a href="index.html">Home</a>
+		<a href="#">Blog</a>
+		<a href="#contact">Contact</a>
+	</nav>
+	<main>
+		<section class="banner">
+			<div class="container">
+				<h1>
+					Wie ich ein<br class="hide-mob" />
+					<span>P4wnP1</span> erschuf 
+				</h1>
+
+				<h3>und wie du damit PCs hacken kannst</h3>
+
+				
+			</div>
+		</section>
+		<section id="services" class="services">
+			<div class="container">
+				<h2>Und so gehts</h2>
+
+				<h3 class="blockeintrag">
+
+					<span class="Wichtigedaten">( Achtung!!! Dieser Blogbeitrag dient ausschließlich zu informativen Zwecken. Der Autor übernimmt keine Verantwortung für illegale Aktivitäten, die Leser möglicherweise mit dem bereitgestellten Material
+					durchführen.) </span> <br> <br>
+					
+					Zu Weihnachten 2023 erhielt ich ein faszinierendes Geschenk: einen Raspberry Pi Zero WH. Bereits im Vorfeld hatte ich mir Gedanken darüber gemacht, wie ich dieses kleine Wunderwerk nutzen könnte. Die Idee, eine Retro-Konsole zu erschaffen, war schnell geboren. <a class="text-link" href="https://www.batocera.org" target="_blank" >Batocera</a> erschien mir jedoch zu träge, also fiel meine Wahl auf P4wnP1 – ein kleines Hacker-Gadget, das auf jedem Betriebssystem seinen Dienst verrichtet.
+
+					Nachdem ich die neueste <a class="text-link" href="https://github.com/RoganDawes/P4wnP1_aloa/releases/tag/v0.1.1-beta" target="_blank">.img.gz-Datei</a> heruntergeladen hatte, spielte ich sie mithilfe des <a class="text-link" href="https://www.raspberrypi.com/software/" target="_blank"> Pi-Imagers</a> auf die Micro SD-Karte. Nach dem Anschluss an einen Windows-Laptop über den USB-Micro-USB-Anschluss verband ich mich per P4wnP1-WLAN <br> <br> <img src="assets/images/P4wnP1-Netzwerk.png" alt="P4wnP1-Netzwerk"> <br> <br> mit meinem Handy, wobei das Passwort MaMe82-P4wnP1 ist, und öffnete <a class="text-link" href="http://172.24.0.1:8000" target="_blank">  http://172.24.0.1:8000</a>. Plötzlich befand ich mich auf der Startseite, <br> <br> <img src="assets/images/P4wnP1_aloa-web-config-screen.png" alt="P4wnP1 Startseite"> <br> <br>  voller Möglichkeiten und Geheimnisse.
+					
+					Ich entschied mich, CDC ECM und RNDIS auszuschalten, da ich sie nicht benötigte. Ein Blick ins Terminal und ein paar geschickte Befehle später erstellte ich einen USB-Stick. Der Befehl lautete: "./genimg -l Hjacks-USB" (maximal 11 Buchstaben für den Stick-Namen), "-s 4000" (maximal 4 GB für die Größe) und "-o 4gb" (Dateiname zur Wiedererkennung).
+					
+					Nach kurzer Wartezeit konnte ich das Terminal schließen und zum P4wnP1 zurückkehren. Mass Storage aktivieren, 4 GB auswählen und oben nur noch sichern – fertig. In den letzten Einstellungen <br> <br> <img src="assets/images/P4wnP1-MTE.png"> <br> <br>  wählte ich mein Template für Bluetooth aus, sicherte es und änderte die Startup-Einstellungen entsprechend. Ein Klick auf "Reboot" <br> <br> <img src="assets/images/P4wnP1-SDSS.png" alt="reboot und shut down option"> <br> <br> und schon lief alles wie am Schnürchen.
+					
+					Aber wie funktioniert das eigentlich? P4wnP1 geht zum Laptop und sagt: "Hey Bro, ich bin eine Tastatur und eine Maus." Der Laptop antwortet prompt: "Alles klar, du kannst jetzt alles eingeben und die Maus nach Belieben bewegen." Und so kann ich die Tastatur und Maus mithilfe von HID-Skripten steuern.
+					
+					Die Erstellung solcher Skripte ist erstaunlich einfach. Man muss nur festlegen, was die Tastatur eingeben oder schreiben soll. Auf diese Weise kann man spielend leicht den Windows Defender ausschalten und dann eine Reverse Shell mit Tools wie Koadic zum Angreifer aufbauen. Über diese Shell erhält der Angreifer vollen Zugriff auf den PC. Doch Vorsicht ist geboten – solche Fähigkeiten sollten stets verantwortungsbewusst und ethisch korrekt eingesetzt werden.
+
+				</h3>
+
+		</section>
+				
+		<section class="contact" id="contact">
+			<div class="container">
+				<h2>Contact</h2>
+				
+		<form>
+				<div class="form-grid">
+						<div class="ci" id="ci">
+							<a href="https://www.discordapp.com/users/hjack737" target="_blank" class="dc"><i class="fa-brands fa-discord"></i></a>
+							<a href="https://www.tiktok.com/@hjack737" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+							<a href="https://www.youtube.com/@Hjack7377" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+							<a href="https://github.com/hjack737" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
+						</div>
+		</form>
+			</div>
+		</section>
+	</main>
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
